@@ -19,7 +19,12 @@ service: aws-nodejs # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-2
+
+app: myapp-dev
+tenant: lorenzoflyvictor
 
 # you can overwrite defaults here
 #  stage: dev
@@ -57,6 +62,10 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
