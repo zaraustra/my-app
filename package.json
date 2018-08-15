@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "src/handlers/handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/zaraustra/my-app.git"
   },
-  "author": "",
+  "author": "Lorenzo Giulioni",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zaraustra/my-app/issues"
   },
-  "homepage": "https://github.com/zaraustra/my-app#readme"
+  "homepage": "https://github.com/zaraustra/my-app#readme",
+  "devDependencies": {
+    "serverless-env-generator": "^1.1.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.293.0",
+    "dotenv": "^6.0.0"
+  }
 }
