@@ -6,7 +6,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: prod
+  stage: dev
   region: eu-west-2
 
 app: myapp-dev
